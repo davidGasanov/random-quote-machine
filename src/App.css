@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap');
+
+
+.App {  
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+
+#quote-box{
+  text-align: center;
+  align-self:center;
+  padding: 30px;
+  background-color:#009FB7;
+  color: white;
+  width: 500px;
+  height: auto;
+  flex-shrink: 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.425));
+  
+}
+
+
+
+#text{
+
+  font-size: 30px;
+}
+
+#author{
+  padding-top: 2%;
+  font-family: Dancing Script;
+  font-size: 20px;
+  
+
+}
+
+#control{
+  padding-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-self:flex-end;
+  
+}
+
+#new-quote{
+  color: rgb(255, 255, 255);
+  background-color: inherit;
+
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+
+
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
