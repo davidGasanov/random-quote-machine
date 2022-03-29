@@ -29,15 +29,14 @@ a, a:visited, a:hover, a:active {
   text-align: center;
   align-self:center;
   padding: 30px;
-  background-color:#009FB7;
   color: white;
   width: 500px;
   height: auto;
   flex-shrink: 0;
-  
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content:space-evenly;
 
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.425));
   
@@ -59,12 +58,13 @@ a, a:visited, a:hover, a:active {
 }
 
 #control{
-  padding-top: 10%;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content:space-between;
   align-self:flex-end;
-  
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 20px;
 }
 
 #new-quote{
@@ -95,11 +95,3 @@ a, a:visited, a:hover, a:active {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
