@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap");
 
+* {
+  box-sizing: border-box;
+}
 
-.App {  
+.App {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -19,62 +22,54 @@
   }
 }
 
-
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
   color: inherit;
 }
 
-
-#quote-box{
+#quote-box {
   text-align: center;
-  align-self:center;
+  align-self: center;
   padding: 30px;
   color: white;
-  width: 500px;
+  max-width: 500px;
+  width: 80%;
   height: auto;
   flex-shrink: 0;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
-
+  justify-content: space-evenly;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.425));
-  
 }
 
-
-
-#text{
-
-  font-size: 30px;
+#text {
+  font-size: clamp(20px, 3vw, 30px);
 }
 
-#author{
+#author {
   padding-top: 2%;
   font-family: Dancing Script;
   font-size: 20px;
-  
-
 }
 
-#control{
+#control {
   width: 90%;
   display: flex;
-  justify-content:space-between;
-  align-self:flex-end;
+  justify-content: space-between;
+  align-self: flex-end;
   position: absolute;
   box-sizing: border-box;
   bottom: 20px;
 }
 
-#new-quote{
+#new-quote {
   color: rgb(255, 255, 255);
   background-color: inherit;
-
   font-family: Helvetica, sans-serif;
   font-size: 14px;
-
-
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -94,4 +89,3 @@ a, a:visited, a:hover, a:active {
 .App-link {
   color: #61dafb;
 }
-

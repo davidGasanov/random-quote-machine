@@ -58,13 +58,13 @@ const QuoteCard = ({ quote, author, fetchQuote, colorList }) => {
         alignSelf: "center",
         padding: "30px",
         backgroundColor: "#009FB7",
-        width: "500px",
+        maxWidth: "500px",
         color: "white",
         ...styles,
       }}
     >
       <p ref={myRef} id="text">
-        {quote}
+        {quote} 
       </p>
       <p id="author">- {author}</p>
       <div id="control">
